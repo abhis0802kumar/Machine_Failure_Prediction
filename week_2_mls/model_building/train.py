@@ -89,7 +89,7 @@ print(classification_report(ytest, y_pred_test))
 joblib.dump(best_model, "best_machine_failure_model_v1.joblib")
 
 # Upload to Hugging Face
-repo_id = "praneeth232/machine_failure_model"
+repo_id = "abhis0802/machine_failure_model"
 repo_type = "model"
 
 api = HfApi(token=os.getenv("HF_TOKEN"))
